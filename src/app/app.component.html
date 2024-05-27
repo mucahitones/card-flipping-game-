@@ -1,0 +1,7 @@
+<div class="buttons">
+  <button class="btn btn-primary m-2" (click)="reset()">Reset</button>
+  <button class="btn btn-success m-2" (click)="startGame()">Start</button>
+</div>
+<div class="board">
+  <app-card *ngFor="let card of cards" [card]="card" (cardFlipped)="cardFlipped($event)"></app-card>
+</div>

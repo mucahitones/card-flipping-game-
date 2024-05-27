@@ -1,0 +1,8 @@
+<div class="card" [ngClass]="{flipped: card.status}" (click)="flipCard()">
+  <div class="card-front">
+    <img src="assets/images/logo.svg" alt="">
+  </div>
+  <div class="card-back">
+    <img *ngIf="card.status" [src]="card.image" alt="">
+  </div>
+</div>
